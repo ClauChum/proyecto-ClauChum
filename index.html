@@ -3,40 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portafolio Claudia Chum</title>
     <link rel="shortcut icon" href="img/ClaudiaChum.png" type="image/x-icon">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Proyectos Recientes</a>
-            <a href="#">Educación y habilidades profesionales</a>
-            <a href="#">Pasatiempos y actividades favoritas</a>
-            <a href="#">Blog</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <section class="textos-header">
-            <h1>Claudia Renee Chum Schaeffer</h1>
-            <h2></h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z"
-                    style="stroke: none; fill: #08f;"></path>
-            </svg></div>
-    </header>
-    <main>
-        <section class="contenedor sobre-mi"></section>
-        <h2 class="titulo"></h2>
-        <div class="contenedor-sobre-mi">
-            <img src="img/" alt="">
-            <div class="contenedor-textos"></div>
+        <a href="#" class="logo"><span>CR</span>CS</a>
+        <ul class="navbar">
+            <li><a href="#inicio" class="active">INICIO</a></li>
+            <li><a href="#sobre-mi">SOBRE MI</a></li>
+            <li><a href="#proyectos">PROYECTOS RECIENTES</a></li>
+            <li><a href="#habilidades">HABILIDADES PROFESIONALES</a></li>
+            <li><a href="#pasatiempo">PASATIEMPOS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+        <div class="menu-btn">
+            <a href="#">MENU</a>
+            <div class="bx bx-menu" id="menu-icon">
+            </div>
         </div>
-    </main>
+    </header>
+
+    </section>
+    <section class="inicio">
+        <div class="texto-inicio">
+            <h1>Claudia<span> Chum</span></h1>
+            <p>Estudiante de quinto año en la carrera de <span>Ingeniería en Sistemas</span></p>
+            <div class="btn-cv">
+                <a href="#" class="btn">DESCARGAR CV</a>
+            </div>
+        </div>
+        <div class="imagen-inicio">
+            <img src="img/Per.png" class="me">
+        </div>
+    </section>
+
+    <div class="redes">
+        <p>Mis redes sociales:</p>
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></box-icon></a>
+            <a href="#"><i class='bx bxl-instagram'></i></box-icon></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-microsoft-teams'></i></a>
+        </div>
+
+    </div>
+
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="imagen-sobre-mi">
+            <img src="img/CC Perfil.png">
+        </div>
+
+        <div class="texto-sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>
+                Mi nombre completo es Claudia Renee Chum Schaeffer.
+                <br>Empecé en la programación con <span>Visual Basic</span> cuando
+                estaba en el colegio, desde entonces he evolucionado y he tenido
+                la oportunidad de aprender diferentes leguajes de programación
+                y desarrollar diversos sistemas.
+            </p>
+            <p>
+                Apesar que me gusta la programación, mi enfoque está más en
+                el análisis y diseño y kjahnah de software.
+            </p>
+        </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <div class="texto-proyectos">
+            <h2>Proyectos Recientes</h2>
+        </div>
+        <div class="items-proyectos">
+            <div class="proyectos-box">
+                <i class='bx bxs-game'></i>
+                <h3>Dead Run</h3>
+                <img src="img/DeadRun.png">
+                <p>
+                    Este videojuego está diseñado para sumergir a los
+                    jugadores en un mundo <span>tenebroso y lleno de suspenso. </span>
+                    <br>Se desarrolló en python y sin duda fue un gran reto pero una
+                    increíble experiencia llena de aprendizajes.
+                </p>
+            </div>
+            <div class="proyectos-box">
+                <i class='bx bxs-hotel'></i>
+                <h3>Hotelería</h3>
+                <img src="img/Hoteleria.png">
+                <p>
+                    Esta es una página web intuitiva y hecha a la medida.
+                    Proporcion al usuario toda la <span>información necesaria</span>
+                    para planificar su estancia, desde la descripción detallada de las habitaciones hasta
+                    las tarifas, actvidades disponibles y los datos de contacto.
+                    <br>Se desarrolló en Visual Studio Code, con Nextjs, Nestjs y React.
+                </p>
+            </div>
+            <div class="proyectos-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>MegaTubos</h3>
+                <img src="img/MegaTubos.png">
+                <p>
+                    MegaTubos es un software de <span>inventario</span> para una
+                    <span>ferretería</span>, cuenta con todo lo necesario para que la empresa
+                    almacene y venda sus productos.
+                    <br>Se desarrolló en Visual Studio, con visual basic.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+
+    </section>
+
+    <section class="pasatiempos" id="pasatiempos">
+        <div class="texto-pasatiempos">
+            <h2>Pasatiempos</h2>
+            <p>
+                Mi nombre completo es Claudia Renee Chum Schaeffer.
+                <br>Empecé en la programación con <span>Visual Basic</span> cuando
+                estaba en el colegio, desde entonces he evolucionado y he tenido
+                la oportunidad de aprender diferentes leguajes de programación
+                y desarrollar diversos sistemas.
+            </p>
+            <p>
+                Apesar que me gusta la programación, mi enfoque está más en
+                el análisis y diseño y kjahnah de software.
+            </p>
+        </div>
+    </section>
+
+    <a href="#" class="scroll-btn"><i class='bx bx-chevron-up'></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+
 </body>
+<main>
+
+</main>
 
 </html>
