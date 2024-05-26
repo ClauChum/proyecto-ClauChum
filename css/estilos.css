@@ -36,8 +36,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 15%;
     background: transparent;
+    padding: 32px 15%;
     transition: all ease .45s;
 }
 
@@ -65,7 +65,7 @@ header{
 
 .navbar a:hover{
     color: var(--main-color);
-}
+} 
 
 .navbar a.active{
     color: var(--main-color);
@@ -80,6 +80,10 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.menu-btn span{
+    color: var(--text-color);
 }
 
 #menu-icon{
@@ -149,6 +153,12 @@ span{
     border: 2px solid var(--main-color);
 }
 
+head.sticky{
+    padding: 15px 11%;
+    background: #000;
+    border-bottom: 1px solid #4e5055;
+}
+
 .redes{
     position: absolute;
     bottom: 3rem;
@@ -181,11 +191,14 @@ span{
 
 .social i:hover{
     transform: translateY(-10px);
-
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
 }
 
 @media (max-width: 1850px){
-    heafer{
+    header{
         padding: 15px 8%;
         transition: .2s;
     }
@@ -200,7 +213,7 @@ span{
 }
 
 @media (max-width: 1370px){
-    heafer{
+    header{
         padding: 15px 4%;
         transition: .2s;
     }
@@ -214,8 +227,8 @@ span{
     }
     :root{
         --big-font: 5.5rem;
-        --p-font: 1rem
-        transition: .2s
+        --p-font: 1rem;
+        transition: .2s;
     }
 }
 
@@ -226,7 +239,7 @@ span{
     :root{
         --big-font: 5rem;
         --p-font: 1rem;
-        transition: .2s
+        transition: .2s;
     }
 }
 
@@ -239,7 +252,7 @@ span{
     }
     header{
         padding: 11px 4%;
-        background: #a29f9f;
+        background: #2d2d2d;
     }
     .inicio{
         height: auto;
@@ -293,7 +306,7 @@ span{
     :root{
         --big-font: 4rem;
         --p-font: 15px;
-        transition: .2s
+        transition: .2s;
     }
     .btn{
         padding: 9px 28px;
@@ -408,12 +421,260 @@ span{
     border: 1px solid #4e5055;
 }
 
+.habilidades{
+    background-color: var(--bg2-color);
+}
 
+.habilidades h1{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    color: var(--text-color);
+}
 
+.habilidades h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
 
+.lenguaje{
+    font-size: 23px;
+}
 
+.tecnicas .lenguaje{
+    margin: 40px 0;
+}
 
+.tecnicas .lenguaje:first-child{
+    margin-top: 0;
+}
 
+.tecnicas .lenguaje:last-child{
+    margin-top: 0;
+}
+
+.tecnicas .lenguaje .info{
+    margin-bottom: 5px;
+}
+
+.tecnicas .lenguaje .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    color: var(--text-color);
+}
+
+.tecnicas .lenguaje .linea{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.tecnicas .lenguaje .linea span{
+    height: 100%;
+    background-color: #bf8ee7;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.linea.python span{
+    width: 90%;
+}
+.linea.js span{
+    width: 65%;
+}
+.linea.react span{
+    width: 20%;
+}
+.linea.html span{
+    width: 80%;
+}
+.linea.visual span{
+    width: 90%;
+}
+.linea.C span{
+    width: 70%;
+}
+
+.linea span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #bb81eb;
+    color: var(--text-color);
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.linea.python span::after{
+    content: "90%";
+}
+.linea.js span::after{
+    content: "65%";
+}
+.linea.react span::after{
+    content: "20%";
+}
+.linea.html span::after{
+    content: "80%";
+}
+.linea.visual span::after{
+    content: "90%";
+}
+.linea.C span::after{
+    content: "70%";
+}
+.linea span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #b169eb;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.habilidades i{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.blandas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.blandas .barra-radial{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.blandas .barra-radial svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.blandas .barra-radial .barra{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animar-barra 1s linear forwards;
+}
+
+@keyframes animar-barra{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #b169eb;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation: animar-path1 1s 1s linear forwards;}
+.path-2{animation: animar-path1 1s 1s linear forwards;}
+.path-3{animation: animar-path1 1s 1s linear forwards;}
+.path-4{animation: animar-path1 1s 1s linear forwards;}
+.path-5{animation: animar-path1 1s 1s linear forwards;}
+
+@keyframes animar-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animar-path2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animar-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animar-path4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+@keyframes animar-path5{
+    100%{
+        stroke-dashoffset: 100m;
+    }
+}
+
+.barra-radial .porcentaje{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.barra .texto{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 .scroll-btn{
     position: fixed;
