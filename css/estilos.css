@@ -686,3 +686,61 @@ head.sticky{
     padding: 9px;
     border-radius: 0.8rem;
 }
+
+.pasatiempos h2{
+    font-size: var(--h2-font);
+    text-align: center;
+}
+
+.pasatiempos .contenedor{
+    background: #62628b;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.pasatiempos .contenedor .fila{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.pasatiempos .contenedor .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: #1f1f21;
+    box-shadow: 0 4px 10px var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.pasatiempos .contenedor .bar:hover{
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+
+.pasatiempos .contenedor .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pasatiempos .contenedor .bar .info span{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.pasatiempos .contenedor .bar .info img{
+    width: 100%;
+    height: auto;
+}
