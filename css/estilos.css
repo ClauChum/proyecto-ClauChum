@@ -57,7 +57,7 @@ header{
 
 .navbar a{
     font-size: var(--p-font);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color);
     margin: 0 25px;
     transition: all ease .50s;
