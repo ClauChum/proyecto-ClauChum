@@ -191,10 +191,6 @@ head.sticky{
 
 .social i:hover{
     transform: translateY(-10px);
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
 }
 
 @media (max-width: 1850px){
@@ -321,7 +317,7 @@ head.sticky{
 @keyframes imgg {
     0%{
         transform: translateY(0);
-    }
+    } 
     50%{
         transform: translateY(-22px);
     }
@@ -339,8 +335,8 @@ head.sticky{
 }
 
 .imagen-sobre-mi img{
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 90%;
 }
 
 .texto-sobre-mi h2{
@@ -743,4 +739,23 @@ head.sticky{
 .pasatiempos .contenedor .bar .info img{
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width:800px) {
+    .pasatiempos .contenedor{
+        margin: 0;
+        padding: 0;
+    }
+
+    .pasatiempos .contenedor .fila{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .pasatiempos .contenedor{
+        margin-top: 5px;
+        width: 100%;
+    }
 }
